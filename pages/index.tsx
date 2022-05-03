@@ -86,7 +86,7 @@ const Home: NextPage = () => {
 
           <Image width={190} height={190} src="https://comunidadevinhedocampinas.com.br/img/clebinho-santos.png" className={styles.avatar} alt="Clebinho Santos" />
             <div className={styles.info}>
-              <h2>Múscica</h2>
+              <h2>Música</h2>
               <h3>Clebinho Santos</h3>
             </div>
           </div>
