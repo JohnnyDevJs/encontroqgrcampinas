@@ -144,9 +144,17 @@
     display: block;
 }
 
+.textGreen {
+    margin-top: 2.5rem;
+    color: #fff;
+    background-color: #3bba11;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+}
+
 @media screen and (max-width: 576px) {
     .header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .header h2.date {
         font-size: 1.1rem;

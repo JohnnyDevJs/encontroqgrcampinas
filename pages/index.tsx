@@ -3,49 +3,13 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useTimer } from 'react-timer-hook'
 
-type timerProps = {
-  expiryTimestamp: any
-}
 
-function MyTimer({expiryTimestamp} : timerProps) {
-  const {
-    days,
-    seconds,
-    minutes,
-    hours,
-    
-  } = useTimer({ expiryTimestamp, onExpire: () => console.warn('onExpire called') });
 
-  return (
-
-    <div id={styles.countdown_dashboard}>
-    <div className={styles.dashp}>
-      <p id={styles.days}>{days}</p>
-      <span className={styles.dashtitle}>Dias</span>
-    </div>
-    <div className={styles.dashp}>
-      <p id={styles.hours}>{hours}</p>
-      <span className={styles.dashtitle}>Horas</span>
-    </div>
-    <div className={styles.dashp}>
-      <p id={styles.minutes}>{minutes}</p>
-      <span className={styles.dashtitle}>Minutos</span>
-    </div>
-    <div className={styles.dashp}>
-      <p id={styles.seconds}>{seconds}</p>
-      <span className={styles.dashtitle}>Segundos</span>
-    </div>
-  </div>
-   
-  );
-}
 
 const Home: NextPage = () => {
-  const time = new Date("Ma 06, 2022 00:00:00");
  
-
+ 
   return (
     <div id={styles.wrapper}>
       <Head>
@@ -65,7 +29,7 @@ const Home: NextPage = () => {
           Sexta-feira, 06 de Maio ás 20h
         </h2>
         <h1>Encontro dos QGR 'S de Campinas e Região</h1>
-        <MyTimer expiryTimestamp={time} />
+        <h1 className={styles.textGreen}>BORA TTT</h1>
       </header>
       <main className={styles.main}>
         <section id={styles.speaker}>
