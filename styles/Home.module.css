@@ -1,0 +1,178 @@
+#wrapper {
+    height: auto;
+}
+
+.header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header h2.date {
+    margin-top: 2.5rem;
+    color: #fff;
+    background-color: #3bba11;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+}
+
+.main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#speaker {
+    background-color: #36383f;
+}
+
+.main section#praise {
+    background-color: #4e5059;
+}
+
+.main section .speaker,
+.main section .praise {
+    display: flex;
+    align-items: center;
+}
+
+.main section .speaker .info {
+    margin-right: 2.5rem;
+}
+
+.main section .praise .info {
+    margin-left: 2.5rem;
+}
+
+.main section .speaker .info h2,
+.main section .praise .info h2 {
+    color: #3bba11;
+    margin-bottom: .2rem;
+    text-transform: uppercase;
+}
+
+.main section .speaker .info h3,
+.main section .praise .info h3 {
+    color: #fff;
+    margin-bottom: .2rem;
+}
+
+.main section .speaker .info p {
+    color: #fff;
+    font-style: italic;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.avatar {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #fff !important;
+    border-radius: 50%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.footer a.button {
+    background-color: #3bba11;
+    padding: 1.2rem 5rem;
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.footer a.button:hover {
+    background-color: #329a0f;
+}
+
+#countdown_dashboard {
+    margin-top: 2rem;
+}
+
+#countdown_dashboard .dashp {
+    background-color: #329a0f;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#countdown_dashboard p {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0px;
+    text-align: center;
+}
+
+#countdown_dashboard .dashtitle {
+    font-size: 11px;
+    color: #fff;
+    clear: both;
+    display: block;
+}
+
+@media screen and (max-width: 576px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    .header h2.date {
+        font-size: 1.1rem;
+    }
+    #countdown_dashboard .dashp {
+        width: 44px;
+        height: 44px;
+    }
+    #countdown_dashboard p {
+        font-size: 30px;
+    }
+    .main section .speaker,
+    .main section .praise {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main section .speaker .info,
+    .main section .praise .info {
+        order: 1;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .footer a.button {
+        font-size: 1rem;
+        padding: 1.2rem 4rem;
+        margin-top: 0;
+    }
+}
